@@ -1,0 +1,20 @@
+h1 {
+    padding-top:30px;
+    color:palevioletred;
+}
+#title{
+    color:blue;
+    margin:25px;
+}
+body {
+    background-color: antiquewhite;
+}
+p {
+    color: brown;
+}
+#message {
+    color:green;
+}
+.classExample {
+    text-align: center;
+}
