@@ -15,6 +15,9 @@ p {
 #message {
     color:green;
 }
-.classExample {
+.centerText {
     text-align: center;
+}
+#nameFont {
+    font-family: Thonburi;
 }
