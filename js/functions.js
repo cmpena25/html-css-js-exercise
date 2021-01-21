@@ -21,12 +21,18 @@ console.log(sayHello('codeup'));
  * console.log 'helloMessage' to check your work
  */
 
+var helloMessage = sayHello('celeste');
+console.log(helloMessage);
+
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+var myName = ('celeste');
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -49,7 +55,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-
+function isTwo(number) {
+    return number === 2;
+}
+console.log(isTwo(2));
+console.log(isTwo(random));
+console.log(isTwo(random));
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -62,12 +73,21 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+function calculateTip(percentage , total) {
+    return(percentage * total);
+}
+console.log(calculateTip(.20, 100));
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+var totalBill = prompt('Enter bill total');
+var percentageOfTip = prompt('Enter tip amount');
+var tipConverted = parseFloat(percentageOfTip) / 100;
+alert(calculateTip(tipConverted, totalBill));
 
 /**
  * TODO:
