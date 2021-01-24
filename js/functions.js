@@ -103,3 +103,13 @@ alert(calculateTip(tipConverted, totalBill));
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(price, percent) {
+    return price - (percent * price)
+}
+var totalPrice = prompt("What is your total?");
+console.log(totalPrice);
+var decimalDiscount = prompt("what is the discount in decimal");
+console.log(decimalDiscount);
+
+alert('Your total is:' + applyDiscount(totalPrice ,decimalDiscount));
