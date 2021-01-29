@@ -102,6 +102,28 @@ analyzecolorSwitchCase(userQuestion);
  * return value.
  */
 
+function calculateTotal(luckyNumber, totalAmount) {
+    if (luckyNumber === 0) {
+        alert("No discount for lucky number 0");
+    } else if (luckyNumber === 1) {
+        alert("Your discount is 10%");
+        alert(totalAmount - (totalAmount *.10));
+    } else if (luckyNumber === 2) {
+        alert("Your discount is 25%");
+        alert(totalAmount - (totalAmount *.25));
+    } else if (luckyNumber === 3) {
+        alert("Your discount is 35%");
+        alert(totalAmount - (totalAmount *.35));
+    } else if (luckyNumber === 4){
+        alert("Your discount is 50%");
+        alert(totalAmount - (totalAmount *.50));
+    } else if (luckyNumber === 5){
+        alert("You get it for free!");
+    }
+}
+
+console.log(calculateTotal(0,100));
+
 
 /**
  * TODO:
