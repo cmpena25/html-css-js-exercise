@@ -122,9 +122,6 @@ function calculateTotal(luckyNumber, totalAmount) {
     }
 }
 
-console.log(calculateTotal(0,100));
-
-
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -133,7 +130,14 @@ console.log(calculateTotal(0,100));
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
+console.log(luckyNumber);
+
+var totalBill = prompt("What is the total for you bill?");
+console.log(totalBill);
+var parsefloatBill = parseFloat(totalBill);
+console.log(parsefloatBill);
+alert(calculateTotal(luckyNumber, parsefloatBill));
 
 /**
  * TODO:
