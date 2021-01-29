@@ -35,9 +35,6 @@ function analyzeColor (color) {
   }
 }
 
-
-
-
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -53,12 +50,29 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 console.log(analyzeColor(randomColor));
 
-
-
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+var userQuestion = prompt("What color do you like?");
+
+function analyzecolorSwitchCase (x) {
+   switch(x){
+       case "orange":
+           alert("That is my favorite");
+           break;
+       case "indigo":
+           alert("Ok...");
+           break;
+       default:
+           alert(x + " That isn't my favorite, but that is ok!");
+           break;
+}
+}
+
+analyzecolorSwitchCase(userQuestion);
+
+
 
 /**
  * TODO:
