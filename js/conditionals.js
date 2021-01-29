@@ -54,8 +54,6 @@ console.log(analyzeColor(randomColor));
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-var userQuestion = prompt("What color do you like?");
-
 function analyzecolorSwitchCase (x) {
    switch(x){
        case "orange":
@@ -70,7 +68,6 @@ function analyzecolorSwitchCase (x) {
 }
 }
 
-analyzecolorSwitchCase(userQuestion);
 
 
 
@@ -80,6 +77,8 @@ analyzecolorSwitchCase(userQuestion);
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+var userQuestion = prompt("What color do you like?");
+analyzecolorSwitchCase(userQuestion);
 
 /* ########################################################################## */
 
@@ -102,6 +101,7 @@ analyzecolorSwitchCase(userQuestion);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
 
 /**
  * TODO:
